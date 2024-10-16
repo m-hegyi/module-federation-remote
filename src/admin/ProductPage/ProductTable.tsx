@@ -18,14 +18,14 @@ const ProductTable = ({ products }: { products: Product[] }) => {
 
   return (
     <div className="w-full">
-      <table className="border-separate border-spacing-y-2 table-auto w-full text-sm">
+      <table className="border-separate border-spacing-y-2 table-fixed w-full text-sm">
         <thead>
           <tr className="py-2">
             <th className="text-left pl-2 py-2">ID</th>
             <th className="text-left py-2">Name</th>
             <th className="text-left py-2">Description</th>
             <th className="text-left py-2">Price</th>
-            <th className="text-left py-2">Actions</th>
+            <th className="text-left py-2 w-32">Actions</th>
           </tr>
         </thead>
         <tbody className="bg-white">
